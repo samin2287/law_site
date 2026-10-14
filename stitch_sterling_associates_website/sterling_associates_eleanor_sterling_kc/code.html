@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary-container": "#775a1b",
+          "secondary-container": "#fdd589",
+          "surface-dim": "#dadada",
+          "surface": "#f9f9f9",
+          "inverse-primary": "#b6c7e8",
+          "outline-variant": "#c4c6ce",
+          "on-primary": "#ffffff",
+          "surface-bright": "#f9f9f9",
+          "on-surface": "#1a1c1c",
+          "on-tertiary-fixed-variant": "#474744",
+          "on-error": "#ffffff",
+          "primary-fixed": "#d5e3ff",
+          "tertiary-fixed-dim": "#c8c6c2",
+          "error": "#ba1a1a",
+          "surface-variant": "#e2e2e2",
+          "surface-container-highest": "#e2e2e2",
+          "on-tertiary-container": "#8d8d89",
+          "tertiary-fixed": "#e4e2dd",
+          "outline": "#75777e",
+          "secondary": "#775a1b",
+          "surface-container-low": "#f3f3f4",
+          "on-tertiary-fixed": "#1b1c19",
+          "primary-fixed-dim": "#b6c7e8",
+          "on-tertiary": "#ffffff",
+          "on-primary-container": "#7c8dab",
+          "primary": "#001128",
+          "surface-container-high": "#e8e8e8",
+          "tertiary": "#10110f",
+          "inverse-surface": "#2f3131",
+          "surface-container": "#eeeeee",
+          "on-secondary-fixed-variant": "#5c4202",
+          "on-primary-fixed": "#081c34",
+          "error-container": "#ffdad6",
+          "surface-tint": "#4e5f7b",
+          "background": "#f9f9f9",
+          "inverse-on-surface": "#f0f1f1",
+          "secondary-fixed-dim": "#e8c178",
+          "on-error-container": "#93000a",
+          "primary-container": "#14263f",
+          "on-surface-variant": "#44474d",
+          "on-secondary-fixed": "#261900",
+          "on-secondary": "#ffffff",
+          "on-primary-fixed-variant": "#364762",
+          "tertiary-container": "#252623",
+          "surface-container-lowest": "#ffffff",
+          "on-background": "#1a1c1c",
+          "secondary-fixed": "#ffdea4"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "2rem",
+          "space-sm": "1rem",
+          "margin": "3rem",
+          "space-xl": "5rem",
+          "space-md": "1.5rem",
+          "space-xs": "0.5rem",
+          "space-lg": "3rem"
+        },
+        "fontFamily": {
+          "label-sm": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "display-lg": [
+            "Cormorant Garamond"
+          ],
+          "headline-sm": [
+            "Cormorant Garamond"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-lg": [
+            "Cormorant Garamond"
+          ],
+          "headline-md": [
+            "Cormorant Garamond"
+          ],
+          "display-sm": [
+            "Cormorant Garamond"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "display-md": [
+            "Cormorant Garamond"
+          ]
+        },
+        "fontSize": {
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-md": [
+            "22px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "500"
+            }
+          ],
+          "display-sm": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.05em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-md": [
+            "44px",
+            {
+              "lineHeight": "52px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Sterling &amp; Associates Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw8fNgwUncOCVPSVnVC8Ox_rOR5YmMVeqMuJpKK4IeBQw1Y-_FAg97WO7LKbyClIHjiwQaU1U31tjPXCWUSKjWIpTMGjLIqJxaREzQXLauw2cev1rUlbuPBTcK-F75YYpcE5ag3krzU70_UbDhfx07zAPMeYEceEZk9ISghean5qSPRSiiBWiuUT04_zdxW_NhdNpM3_ByvBmrH3FJrJ-dNYgOrIFSyK3VYyWbKp3jD56rEI1taIVg"/><a class="font-headline-md text-on-surface tracking-wide uppercase" data-path="our-firm" href="#">Sterling &amp; Associates</a></div><nav class="hidden md:flex items-center gap-space-md" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg"><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="our-firm" href="#">Our Firm</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="services" href="#">Services</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="our-people" href="#">Our People</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="insights" href="#">Insights</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center px-space-md py-space-xs bg-primary-container text-on-primary-container text-label-md uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-colors" data-path="contact" href="#">Arrange a Consultation</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Breadcrumb Navigation -->
+<div class="max-w-7xl mx-auto px-gutter w-full pt-space-md pb-space-sm">
+<nav class="flex items-center gap-space-xs text-label-md text-on-surface-variant uppercase tracking-wider">
+<a class="hover:text-on-surface transition-colors" href="#">Home</a>
+<span class="text-outline">/</span>
+<a class="hover:text-on-surface transition-colors" href="#">Our People</a>
+<span class="text-outline">/</span>
+<span class="text-primary font-bold">Eleanor Sterling, KC</span>
+</nav>
+</div>
+<!-- Attorney Header Section -->
+<section class="max-w-7xl mx-auto px-gutter w-full pb-space-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center bg-surface-container-low p-space-lg rounded-xl shadow-sm relative overflow-hidden">
+<!-- Decorative background accent -->
+<div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<!-- Attorney Portrait -->
+<div class="lg:col-span-4 relative group">
+<div class="aspect-[3/4] w-full rounded-lg overflow-hidden shadow-md">
+<img class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-700" data-alt="A dignified and confident female British King's Counsel in her late 50s, wearing classic legal attire with a dark navy tailored blazer, set against a softly lit library background with leather-bound law books. High-end editorial portrait photography, warm cinematic lighting, shallow depth of field, luxurious atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGdIpUzocJvwQfhkRLykf99SzyoVu6639ZSa5UnHmxSemhMcnGT2Jv-1INDMALJsi_Yc31FzJvqsueTNVtRNM9GUFORCazzVA8f0JCKr5vPE2Nok93KumviBCDDvqH_ZD4OmZ85_AWuYZcvUnlbyPm1JANukn0DK8Qwlx0GKwqBapjyLPnkIT7xOy6WWB5Mc0N8IsmTI9khv30UozxFC1ElD4bAL2bv4kAxqlYiEDMp1fAUjmRxjVo"/>
+</div>
+<div class="absolute bottom-4 left-4 right-4 bg-primary/90 backdrop-blur-md p-space-sm text-on-primary rounded">
+<div class="text-label-sm uppercase tracking-wider text-secondary-fixed-dim">King's Counsel</div>
+<div class="text-headline-sm text-on-primary">Called to the Bar 1994</div>
+</div>
+</div>
+<!-- Attorney Details -->
+<div class="lg:col-span-8 flex flex-col justify-center space-y-space-md">
+<div>
+<div class="inline-block px-space-xs py-1 bg-primary-container text-on-primary-container text-label-sm uppercase tracking-widest mb-space-xs rounded">
+            Senior Partner • Corporate Law Practice Group
+          </div>
+<h1 class="font-display-lg text-primary text-4xl lg:text-5xl tracking-tight mb-space-xs">
+            Eleanor Sterling, KC
+          </h1>
+<p class="font-headline-md text-secondary text-xl italic">
+            "Uncompromising counsel in high-stakes corporate arbitration and cross-border transactions."
+          </p>
+</div>
+<p class="text-body-lg text-on-surface-variant leading-relaxed">
+          Eleanor Sterling, KC is a pre-eminent figure in international commercial litigation and corporate arbitration. With over three decades of pleading before the English High Court, Supreme Court, and international tribunals, she specializes in complex multi-jurisdictional disputes, corporate restructuring, and high-value mergers &amp; acquisitions.
+        </p>
+<!-- Practice Area Tags -->
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="px-space-sm py-1 bg-surface-container-high text-on-surface text-label-md uppercase tracking-wider rounded">International Arbitration</span>
+<span class="px-space-sm py-1 bg-surface-container-high text-on-surface text-label-md uppercase tracking-wider rounded">Cross-Border M&amp;A</span>
+<span class="px-space-sm py-1 bg-surface-container-high text-on-surface text-label-md uppercase tracking-wider rounded">Corporate Governance</span>
+<span class="px-space-sm py-1 bg-surface-container-high text-on-surface text-label-md uppercase tracking-wider rounded">Fraud &amp; Asset Tracing</span>
+</div>
+<!-- Contact Actions -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-sm">
+<a class="px-space-md py-3 bg-primary text-on-primary text-label-md uppercase tracking-wider hover:bg-primary-container hover:text-on-primary-container transition-colors rounded" href="#consultation">
+            Schedule a Consultation
+          </a>
+<a class="px-space-md py-3 bg-transparent text-primary border border-primary text-label-md uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-colors flex items-center gap-2 rounded" href="mailto:e.sterling@sterling-law.co.uk">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span>Direct Secure Email</span>
+</a>
+<a class="p-3 bg-transparent text-primary border border-primary hover:bg-primary hover:text-on-primary transition-colors rounded" href="#">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Content Grid: Biography & Representative Matters -->
+<section class="max-w-7xl mx-auto px-gutter w-full pb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: Biography & Credentials -->
+<div class="lg:col-span-7 space-y-space-lg">
+<div>
+<div class="text-label-sm uppercase tracking-widest text-secondary mb-space-xs">Professional Biography</div>
+<h2 class="font-headline-lg text-primary text-3xl mb-space-md">Decades of Defining Legal Precedent</h2>
+<div class="space-y-space-md text-body-lg text-on-surface-variant">
+<p>
+              Eleanor Sterling took silk in 2012 following an illustrious career as a junior advocate specializing in commercial chancery and corporate disputes. Her practice centers on advising FTSE 100 corporations, sovereign wealth funds, and ultra-high-net-worth individuals navigating critical enterprise risks.
+            </p>
+<p>
+              Recognized consistently by Chambers &amp; Partners and The Legal 500 as a Star Individual, Eleanor is noted for her forensic intellect, devastating cross-examination style, and immaculate strategic foresight in settlement negotiations. She has acted as lead counsel in over seventy reported appellate decisions in the UK and overseas common law jurisdictions.
+            </p>
+</div>
+</div>
+<!-- Case Citation Callout -->
+<div class="p-space-md bg-surface-container-low border-l-4 border-secondary rounded-r-lg">
+<p class="font-headline-md italic text-primary text-lg mb-space-xs">
+            "Ms. Sterling commands the courtroom with an authoritative grace and intellectual precision that completely alters the dynamics of complex commercial litigation."
+          </p>
+<span class="text-label-sm uppercase tracking-wider text-on-surface-variant">— Chambers UK Bar Guide, Global Elite Practitioner Review</span>
+</div>
+<!-- Academic & Professional Background -->
+<div>
+<div class="text-label-sm uppercase tracking-widest text-secondary mb-space-xs">Pedigree &amp; Education</div>
+<h2 class="font-headline-lg text-primary text-3xl mb-space-md">Credentials &amp; Appointments</h2>
+<ul class="space-y-space-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary mt-1">school</span>
+<div>
+<strong class="text-on-surface block font-headline-sm text-lg">University of Oxford, Lady Margaret Hall</strong>
+<span>M.A. in Jurisprudence (First Class Honours), Vinerian Scholar (1992)</span>
+</div>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary mt-1">gavel</span>
+<div>
+<strong class="text-on-surface block font-headline-sm text-lg">Lincoln's Inn</strong>
+<span>Called to the Bar (1994), Appointed Queen's Counsel (2012)</span>
+</div>
+</li>
+<li class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary mt-1">public</span>
+<div>
+<strong class="text-on-surface block font-headline-sm text-lg">International Court of Arbitration</strong>
+<span>Panel Arbitrator and Fellow of the Chartered Institute of Arbitrators (FCIArb)</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<!-- Right Column: Representative Matters & Practice Focus -->
+<div class="lg:col-span-5 space-y-space-lg">
+<div class="bg-primary-container text-on-primary-container p-space-lg rounded-xl shadow-sm">
+<div class="text-label-sm uppercase tracking-widest text-secondary-fixed-dim mb-space-xs">Notable Experience</div>
+<h3 class="font-headline-lg text-on-primary text-2xl mb-space-md">Representative Matters</h3>
+<div class="space-y-space-md">
+<div class="border-b border-on-primary-container/20 pb-space-md">
+<div class="text-label-sm text-secondary-fixed mb-1">LCIA Arbitration • $1.2B Valuation</div>
+<h4 class="font-headline-sm text-on-primary text-lg mb-1">Energy Sector Cross-Border Dispute</h4>
+<p class="text-body-sm text-on-primary-container/80">Successfully represented a European consortium in a complex multi-party arbitration concerning pipeline transit rights and force majeure claims.</p>
+</div>
+<div class="border-b border-on-primary-container/20 pb-space-md">
+<div class="text-label-sm text-secondary-fixed mb-1">UK Supreme Court • Precedent Setting</div>
+<h4 class="font-headline-sm text-on-primary text-lg mb-1">Director Fiduciary Duties Appeal</h4>
+<p class="text-body-sm text-on-primary-container/80">Acted as lead counsel for the appellant in establishing landmark jurisprudence on shadow director liability during corporate distress.</p>
+</div>
+<div>
+<div class="text-label-sm text-secondary-fixed mb-1">High Court of Justice • Chancery Division</div>
+<h4 class="font-headline-sm text-on-primary text-lg mb-1">Global Banking Fraud Recovery</h4>
+<p class="text-body-sm text-on-primary-container/80">Secured worldwide freezing orders and subsequent asset tracing exceeding £450M across five offshore jurisdictions.</p>
+</div>
+</div>
+</div>
+<!-- Professional Memberships Box -->
+<div class="bg-surface-container-low p-space-lg rounded-xl">
+<div class="text-label-sm uppercase tracking-widest text-secondary mb-space-xs">Memberships</div>
+<h3 class="font-headline-lg text-primary text-xl mb-space-md">Affiliations &amp; Board Roles</h3>
+<ul class="space-y-2 text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+<span>Commercial Bar Association (COMBAR)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+<span>London Court of International Arbitration (LCIA) Users' Council</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+<span>Bar Council Law Reform Committee</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Related Legal Insights -->
+<section class="bg-surface-container-low py-space-xl">
+<div class="max-w-7xl mx-auto px-gutter w-full">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-space-lg">
+<div>
+<div class="text-label-sm uppercase tracking-widest text-secondary mb-space-xs">Thought Leadership</div>
+<h2 class="font-headline-lg text-primary text-3xl lg:text-4xl">Insights Authored by Eleanor Sterling</h2>
+</div>
+<a class="mt-4 md:mt-0 text-label-md uppercase tracking-wider text-primary hover:text-secondary transition-colors flex items-center gap-1" href="#">
+<span>View All Publications</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Insight Card 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-label-sm text-secondary mb-space-xs uppercase tracking-wider">
+<span>Briefing</span>
+<span>October 2024</span>
+</div>
+<h3 class="font-headline-md text-primary text-xl mb-space-xs">Navigating Sanctions Compliance in Cross-Border M&amp;A</h3>
+<p class="text-body-sm text-on-surface-variant mb-space-md">An analytical review of evolving regulatory frameworks and their direct implications for transaction timelines and risk allocation.</p>
+</div>
+<a class="text-label-md uppercase tracking-wider text-primary font-bold hover:text-secondary transition-colors inline-flex items-center gap-1" href="#">
+<span>Read Article</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<!-- Insight Card 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-label-sm text-secondary mb-space-xs uppercase tracking-wider">
+<span>Whitepaper</span>
+<span>August 2024</span>
+</div>
+<h3 class="font-headline-md text-primary text-xl mb-space-xs">The Resurgence of Emergency Arbitrators in Commercial Disputes</h3>
+<p class="text-body-sm text-on-surface-variant mb-space-md">Evaluating the speed, enforceability, and strategic advantages of expedited interim relief in international arbitration.</p>
+</div>
+<a class="text-label-md uppercase tracking-wider text-primary font-bold hover:text-secondary transition-colors inline-flex items-center gap-1" href="#">
+<span>Read Article</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<!-- Insight Card 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-label-sm text-secondary mb-space-xs uppercase tracking-wider">
+<span>Journal Article</span>
+<span>May 2024</span>
+</div>
+<h3 class="font-headline-md text-primary text-xl mb-space-xs">Corporate Governance and Director Accountability Post-2023</h3>
+<p class="text-body-sm text-on-surface-variant mb-space-md">Examining shifting statutory duties regarding environmental, social, and financial transparency in UK boardrooms.</p>
+</div>
+<a class="text-label-md uppercase tracking-wider text-primary font-bold hover:text-secondary transition-colors inline-flex items-center gap-1" href="#">
+<span>Read Article</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Consultation CTA Section -->
+<section class="max-w-7xl mx-auto px-gutter w-full py-space-xl" id="consultation">
+<div class="bg-primary text-on-primary p-space-xl rounded-2xl shadow-xl relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-space-lg">
+<!-- Background glow -->
+<div class="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-secondary/10 blur-3xl pointer-events-none"></div>
+<div class="max-w-xl space-y-space-sm z-10">
+<div class="text-label-sm uppercase tracking-widest text-secondary-fixed">Confidential Engagement</div>
+<h2 class="font-display-lg text-on-primary text-3xl lg:text-4xl">Arrange a Consultation with Eleanor Sterling, KC</h2>
+<p class="text-body-lg text-on-primary/80">
+          Our chambers provide discreet, highly tailored legal counsel for corporate entities and private clients facing critical matters.
+        </p>
+</div>
+<div class="z-10 w-full lg:w-auto">
+<form class="bg-surface-container-lowest p-space-md rounded-xl text-on-surface space-y-space-sm w-full lg:w-96 shadow-lg">
+<div class="font-headline-sm text-primary text-lg mb-2">Request Direct Inquiry</div>
+<div>
+<label class="block text-label-sm uppercase text-on-surface-variant mb-1">Full Name</label>
+<input class="w-full px-3 py-2 border border-outline-variant rounded bg-surface text-body-md focus:outline-none focus:border-primary" placeholder="Lord / Lady / Mr / Ms" type="text"/>
+</div>
+<div>
+<label class="block text-label-sm uppercase text-on-surface-variant mb-1">Corporate Email</label>
+<input class="w-full px-3 py-2 border border-outline-variant rounded bg-surface text-body-md focus:outline-none focus:border-primary" placeholder="counsel@enterprise.com" type="email"/>
+</div>
+<div>
+<label class="block text-label-sm uppercase text-on-surface-variant mb-1">Matter Overview</label>
+<textarea class="w-full px-3 py-2 border border-outline-variant rounded bg-surface text-body-md focus:outline-none focus:border-primary" placeholder="Brief summary of legal requirements..." rows="3"></textarea>
+</div>
+<button class="w-full py-3 bg-primary text-on-primary text-label-md uppercase tracking-wider hover:bg-primary-container hover:text-on-primary-container transition-colors rounded" type="button">
+            Submit Confidential Request
+          </button>
+</form>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-primary-container text-on-primary-container py-space-xl"><div class="max-w-7xl mx-auto px-gutter grid grid-cols-1 md:grid-cols-4 gap-space-lg mb-space-lg"><div><div class="font-headline-lg text-on-primary mb-space-sm">Sterling &amp; Associates</div><p class="text-body-sm text-on-primary-container/80 mb-space-md">An elite British law firm providing uncompromising legal counsel, intellectual rigor, and distinguished representation for global enterprises and private clients.</p><div class="text-label-sm uppercase tracking-wider text-secondary-fixed-dim">Portfolio Demonstration Prototype</div></div><div><div class="font-headline-sm text-on-primary mb-space-sm">Legal Services</div><ul class="space-y-2 text-body-sm text-on-primary-container/80"><li><a class="hover:text-on-primary transition-colors" href="#">Corporate &amp; Commercial</a></li><li><a class="hover:text-on-primary transition-colors" href="#">Dispute Resolution</a></li><li><a class="hover:text-on-primary transition-colors" href="#">Private Wealth</a></li><li><a class="hover:text-on-primary transition-colors" href="#">Real Estate Law</a></li></ul></div><div><div class="font-headline-sm text-on-primary mb-space-sm">Firm Navigation</div><ul class="space-y-2 text-body-sm text-on-primary-container/80"><li><a class="hover:text-on-primary transition-colors" href="#">Our Firm</a></li><li><a class="hover:text-on-primary transition-colors" href="#">Our People</a></li><li><a class="hover:text-on-primary transition-colors" href="#">Insights &amp; Publications</a></li><li><a class="hover:text-on-primary transition-colors" href="#">Careers</a></li></ul></div><div><div class="font-headline-sm text-on-primary mb-space-sm">London Headquarters</div><p class="text-body-sm text-on-primary-container/80 mb-space-xs">14 Gresham Street, London EC2V 7JE</p><p class="text-body-sm text-on-primary-container/80 mb-space-xs">Tel: +44 (0)20 7946 0912</p><p class="text-body-sm text-on-primary-container/80 mb-space-md">Email: counsel@sterling-law.co.uk</p><div class="flex gap-space-sm text-body-sm"><a class="hover:text-on-primary transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-primary transition-colors" href="#">Terms of Use</a></div></div></div><div class="max-w-7xl mx-auto px-gutter pt-space-md border-t border-on-primary-container/20 flex flex-col sm:flex-row justify-between items-center text-body-sm text-on-primary-container/60"><div>© 2024 Sterling &amp; Associates LLP. All rights reserved.</div><div class="mt-2 sm:mt-0">Regulated by the Solicitors Regulation Authority.</div></div></footer></body></html>

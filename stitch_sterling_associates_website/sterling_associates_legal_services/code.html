@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary-container": "#775a1b",
+          "secondary-container": "#fdd589",
+          "surface-dim": "#dadada",
+          "surface": "#f9f9f9",
+          "inverse-primary": "#b6c7e8",
+          "outline-variant": "#c4c6ce",
+          "on-primary": "#ffffff",
+          "surface-bright": "#f9f9f9",
+          "on-surface": "#1a1c1c",
+          "on-tertiary-fixed-variant": "#474744",
+          "on-error": "#ffffff",
+          "primary-fixed": "#d5e3ff",
+          "tertiary-fixed-dim": "#c8c6c2",
+          "error": "#ba1a1a",
+          "surface-variant": "#e2e2e2",
+          "surface-container-highest": "#e2e2e2",
+          "on-tertiary-container": "#8d8d89",
+          "tertiary-fixed": "#e4e2dd",
+          "outline": "#75777e",
+          "secondary": "#775a1b",
+          "surface-container-low": "#f3f3f4",
+          "on-tertiary-fixed": "#1b1c19",
+          "primary-fixed-dim": "#b6c7e8",
+          "on-tertiary": "#ffffff",
+          "on-primary-container": "#7c8dab",
+          "primary": "#001128",
+          "surface-container-high": "#e8e8e8",
+          "tertiary": "#10110f",
+          "inverse-surface": "#2f3131",
+          "surface-container": "#eeeeee",
+          "on-secondary-fixed-variant": "#5c4202",
+          "on-primary-fixed": "#081c34",
+          "error-container": "#ffdad6",
+          "surface-tint": "#4e5f7b",
+          "background": "#f9f9f9",
+          "inverse-on-surface": "#f0f1f1",
+          "secondary-fixed-dim": "#e8c178",
+          "on-error-container": "#93000a",
+          "primary-container": "#14263f",
+          "on-surface-variant": "#44474d",
+          "on-secondary-fixed": "#261900",
+          "on-secondary": "#ffffff",
+          "on-primary-fixed-variant": "#364762",
+          "tertiary-container": "#252623",
+          "surface-container-lowest": "#ffffff",
+          "on-background": "#1a1c1c",
+          "secondary-fixed": "#ffdea4"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "2rem",
+          "space-sm": "1rem",
+          "margin": "3rem",
+          "space-xl": "5rem",
+          "space-md": "1.5rem",
+          "space-xs": "0.5rem",
+          "space-lg": "3rem"
+        },
+        "fontFamily": {
+          "label-sm": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "display-lg": [
+            "Cormorant Garamond"
+          ],
+          "headline-sm": [
+            "Cormorant Garamond"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-lg": [
+            "Cormorant Garamond"
+          ],
+          "headline-md": [
+            "Cormorant Garamond"
+          ],
+          "display-sm": [
+            "Cormorant Garamond"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "display-md": [
+            "Cormorant Garamond"
+          ]
+        },
+        "fontSize": {
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-md": [
+            "22px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "500"
+            }
+          ],
+          "display-sm": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.05em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-md": [
+            "44px",
+            {
+              "lineHeight": "52px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Sterling &amp; Associates Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw8fNgwUncOCVPSVnVC8Ox_rOR5YmMVeqMuJpKK4IeBQw1Y-_FAg97WO7LKbyClIHjiwQaU1U31tjPXCWUSKjWIpTMGjLIqJxaREzQXLauw2cev1rUlbuPBTcK-F75YYpcE5ag3krzU70_UbDhfx07zAPMeYEceEZk9ISghean5qSPRSiiBWiuUT04_zdxW_NhdNpM3_ByvBmrH3FJrJ-dNYgOrIFSyK3VYyWbKp3jD56rEI1taIVg"/><a class="font-headline-md text-on-surface tracking-wide uppercase" data-path="our-firm" href="#">Sterling &amp; Associates</a></div><nav class="hidden md:flex items-center gap-space-md" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg"><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="our-firm" href="#">Our Firm</a><a aria-current="page" class="transition-colors bg-primary-container text-on-primary-container font-bold rounded-lg" data-path="services" href="#">Services</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="our-people" href="#">Our People</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="insights" href="#">Insights</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center px-space-md py-space-xs bg-primary-container text-on-primary-container text-label-md uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-colors" data-path="contact" href="#">Arrange a Consultation</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full bg-surface text-on-surface">
+<!-- Services Overview Hero -->
+<section class="relative w-full py-space-xl px-gutter max-w-7xl mx-auto flex flex-col items-start justify-center">
+<div class="flex items-center gap-space-xs mb-space-sm">
+<span class="w-12 h-[1px] bg-secondary"></span>
+<span class="font-label-md text-secondary uppercase tracking-widest">Sterling Practice Areas</span>
+</div>
+<h1 class="font-display-lg text-primary max-w-4xl mb-space-md tracking-tight">
+      Comprehensive Legal Expertise for Complex Enterprise &amp; Private Wealth
+    </h1>
+<p class="font-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+      Combining uncompromising intellectual rigor with bespoke strategic counsel. We guide multinational corporations, financial institutions, and distinguished private clients through their most demanding legal challenges.
+    </p>
+<!-- Quick Navigation / Anchor Pills -->
+<div class="flex flex-wrap gap-space-xs mt-space-lg">
+<a class="px-space-md py-space-xs bg-surface-container hover:bg-primary hover:text-on-primary text-label-md transition-colors uppercase tracking-wider" href="#corporate">Corporate &amp; Commercial</a>
+<a class="px-space-md py-space-xs bg-surface-container hover:bg-primary hover:text-on-primary text-label-md transition-colors uppercase tracking-wider" href="#property">Property Law</a>
+<a class="px-space-md py-space-xs bg-surface-container hover:bg-primary hover:text-on-primary text-label-md transition-colors uppercase tracking-wider" href="#employment">Employment Law</a>
+<a class="px-space-md py-space-xs bg-surface-container hover:bg-primary hover:text-on-primary text-label-md transition-colors uppercase tracking-wider" href="#family">Family Law</a>
+<a class="px-space-md py-space-xs bg-surface-container hover:bg-primary hover:text-on-primary text-label-md transition-colors uppercase tracking-wider" href="#dispute">Dispute Resolution</a>
+</div>
+</section>
+<!-- Interactive Practice Areas Section -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-7xl mx-auto px-gutter">
+<div class="mb-space-xl">
+<span class="font-label-sm text-secondary uppercase tracking-widest block mb-space-xs">Practitioner Divisions</span>
+<h2 class="font-headline-lg text-primary text-[36px]">The Practice Disciplines</h2>
+</div>
+<!-- Practice Area 1: Corporate & Commercial Law -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start mb-space-xl pb-space-xl border-b border-outline-variant/20" id="corporate">
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[24px]">gavel</span>
+<span class="font-label-md uppercase tracking-wider">Division 01</span>
+</div>
+<h3 class="font-headline-lg text-primary text-[32px]">Corporate &amp; Commercial Law</h3>
+<p class="font-body-md text-on-surface-variant">
+            Delivering strategic transaction counsel, cross-border M&amp;A governance, regulatory compliance, and venture structuring for global market leaders and high-growth enterprises.
+          </p>
+<div class="p-space-md bg-surface-container-lowest shadow-sm">
+<div class="font-headline-sm text-primary mb-space-xs">Representative Metrics</div>
+<div class="grid grid-cols-2 gap-space-md pt-space-xs">
+<div>
+<div class="font-display-md text-secondary">£4.2B+</div>
+<div class="font-label-sm text-on-surface-variant uppercase">Transactions Advised</div>
+</div>
+<div>
+<div class="font-display-md text-secondary">99.4%</div>
+<div class="font-label-sm text-on-surface-variant uppercase">Client Retention</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 flex flex-col gap-space-md bg-surface-container-lowest p-space-lg shadow-sm">
+<div>
+<div class="font-headline-sm text-primary mb-space-xs">Typical Matters Handled</div>
+<ul class="space-y-2 font-body-md text-on-surface-variant">
+<li class="flex items-start gap-space-xs"><span class="text-secondary mt-1">•</span> Cross-border mergers and corporate acquisitions</li>
+<li class="flex items-start gap-space-xs"><span class="text-secondary mt-1">•</span> Complex joint ventures and strategic alliances</li>
+<li class="flex items-start gap-space-xs"><span class="text-secondary mt-1">•</span> Regulatory compliance, FCA investigations, and governance advisory</li>
+<li class="flex items-start gap-space-xs"><span class="text-secondary mt-1">•</span> Private equity and venture capital financing rounds</li>
+</ul>
+</div>
+<div class="pt-space-md border-t border-surface-container">
+<div class="font-headline-sm text-primary mb-space-xs">Engagement Process</div>
+<ol class="grid grid-cols-1 md:grid-cols-3 gap-space-md mt-space-sm">
+<div class="p-space-sm bg-surface-container-low">
+<div class="font-label-sm text-secondary mb-1">STEP 01</div>
+<div class="font-headline-sm text-primary text-[16px] mb-1">Discovery</div>
+<p class="font-body-sm text-on-surface-variant">Initial audit of corporate structure and transactional objectives.</p>
+</div>
+<div class="p-space-sm bg-surface-container-low">
+<div class="font-label-sm text-secondary mb-1">STEP 02</div>
+<div class="font-headline-sm text-primary text-[16px] mb-1">Structuring</div>
+<p class="font-body-sm text-on-surface-variant">Drafting bespoke agreements and risk mitigation frameworks.</p>
+</div>
+<div class="p-space-sm bg-surface-container-low">
+<div class="font-label-sm text-secondary mb-1">STEP 03</div>
+<div class="font-headline-sm text-primary text-[16px] mb-1">Execution</div>
+<p class="font-body-sm text-on-surface-variant">Closing orchestration and post-transaction compliance integration.</p>
+</div>
+</ol>
+</div>
+</div>
+</div>
+<!-- Practice Area 2: Property Law -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start mb-space-xl pb-space-xl border-b border-outline-variant/20" id="property">
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[24px]">apartment</span>
+<span class="font-label-md uppercase tracking-wider">Division 02</span>
+</div>
+<h3 class="font-headline-lg text-primary text-[32px]">Property Law</h3>
+<p class="font-body-md text-on-surface-variant">
+            Comprehensive real estate counsel covering prime commercial acquisitions, high-value residential portfolios, development financing, and landlord-tenant litigation.
+          </p>
+<div class="w-full h-48 bg-cover bg-center shadow-sm" data-alt="An imposing modern glass and stone commercial headquarters in the City of London under an overcast sky, captured with architectural precision and sophisticated cool-toned editorial lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAnv2PIXYw3yggBdT988HutdvVsosx7qFYom0D43U-gFUIcaJUTtvRYrnYHClaOZ3z3MGhjRLOBV9OnwgvlcM97irHwBdNBufAOOcAW3drs4eD97OU4wOxGvRcqfL7Vid6mab1QTkbpt65kSYidXo5D2H-xlQ4zSQkhYyf7oxULvT1J7-C_lUBMtxEH5LbmrwrfVXLz0Q0EPsCTkWZawtxtHCLR9AlTWlWni93Wny9Pcqskz3HJUYfC')"></div>
+</div>
+<div class="lg:col-span-7 flex flex-col gap-space-md bg-surface-container-lowest p-space-lg shadow-sm">
+<div>
+<div class="font-headline-sm text-primary mb-space-xs">Typical Matters Handled</div>
+<ul class="space-y-2 font-body-md text-on-surface-variant">
+<li class="flex items-start gap-space-xs"><span class="text-secondary mt-1">•</span> Acquisition and disposal of prime commercial real estate</li>
+<li class="flex items-start gap-space-xs"><span class="text-secondary mt-1">•</span> Commercial leasing negotiations for institutional landlords and tenants</li>
+<li class="flex items-start gap-space-xs"><span class="text-secondary mt-1">•</span> Real estate development structuring and planning permissions</li>
+<li class="flex items-start gap-space-xs"><span class="text-secondary mt-1">•</span> Property portfolio restructuring for private family offices</li>
+</ul>
+</div>
+<div class="pt-space-md border-t border-surface-container">
+<div class="font-headline-sm text-primary mb-space-xs">Engagement Process</div>
+<ol class="grid grid-cols-1 md:grid-cols-3 gap-space-md mt-space-sm">
+<div class="p-space-sm bg-surface-container-low">
+<div class="font-label-sm text-secondary mb-1">STEP 01</div>
+<div class="font-headline-sm text-primary text-[16px] mb-1">Due Diligence</div>
+<p class="font-body-sm text-on-surface-variant">Comprehensive title reviews, environmental searches, and zoning checks.</p>
+</div>
+<div class="p-space-sm bg-surface-container-low">
+<div class="font-label-sm text-secondary mb-1">STEP 02</div>
+<div class="font-headline-sm text-primary text-[16px] mb-1">Negotiation</div>
+<p class="font-body-sm text-on-surface-variant">Securing favorable covenants, warranties, and conditional terms.</p>
+</div>
+<div class="p-space-sm bg-surface-container-low">
+<div class="font-label-sm text-secondary mb-1">STEP 03</div>
+<div class="font-headline-sm text-primary text-[16px] mb-1">Completion</div>
+<p class="font-body-sm text-on-surface-variant">Fund transfer coordination, Land Registry filings, and handover.</p>
+</div>
+</ol>
+</div>
+</div>
+</div>
+<!-- Practice Area 3: Employment Law -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start mb-space-xl pb-space-xl border-b border-outline-variant/20" id="employment">
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[24px]">badge</span>
+<span class="font-label-md uppercase tracking-wider">Division 03</span>
+</div>
+<h3 class="font-headline-lg text-primary text-[32px]">Employment Law</h3>
+<p class="font-body-md text-on-surface-variant">
+            Strategic advisory for executive compensation, boardroom disputes, restrictive covenants, TUPE transfers, and large-scale workforce restructuring.
+          </p>
+<div class="p-space-md bg-primary text-on-primary">
+<div class="font-headline-sm text-secondary-fixed mb-space-xs">Executive Protection</div>
+<p class="font-body-sm text-on-primary/80">Protecting intellectual capital and safeguarding executive interests during corporate transitions.</p>
+</div>
+</div>
+<div class="lg:col-span-7 flex flex-col gap-space-md bg-surface-container-lowest p-space-lg shadow-sm">
+<div>
+<div class="font-headline-sm text-primary mb-space-xs">Typical Matters Handled</div>
+<ul class="space-y-2 font-body-md text-on-surface-variant">
+<li class="flex items-start gap-space-xs"><span class="text-secondary mt-1">•</span> Executive service agreements and severance negotiations</li>
+<li class="flex items-start gap-space-xs"><span class="text-secondary mt-1">•</span> Defense and prosecution of restrictive covenant breaches</li>
+<li class="flex items-start gap-space-xs"><span class="text-secondary mt-1">•</span> Tribunal litigation regarding unfair dismissal and discrimination</li>
+<li class="flex items-start gap-space-xs"><span class="text-secondary mt-1">•</span> Workforce reorganisations and TUPE transfer compliance</li>
+</ul>
+</div>
+<div class="pt-space-md border-t border-surface-container">
+<div class="font-headline-sm text-primary mb-space-xs">Engagement Process</div>
+<ol class="grid grid-cols-1 md:grid-cols-3 gap-space-md mt-space-sm">
+<div class="p-space-sm bg-surface-container-low">
+<div class="font-label-sm text-secondary mb-1">STEP 01</div>
+<div class="font-headline-sm text-primary text-[16px] mb-1">Risk Assessment</div>
+<p class="font-body-sm text-on-surface-variant">Evaluating exposure under UK employment statutes and contracts.</p>
+</div>
+<div class="p-space-sm bg-surface-container-low">
+<div class="font-label-sm text-secondary mb-1">STEP 02</div>
+<div class="font-headline-sm text-primary text-[16px] mb-1">Resolution Strategy</div>
+<p class="font-body-sm text-on-surface-variant">Pursuing confidential settlement or robust tribunal defense.</p>
+</div>
+<div class="p-space-sm bg-surface-container-low">
+<div class="font-label-sm text-secondary mb-1">STEP 03</div>
+<div class="font-headline-sm text-primary text-[16px] mb-1">Implementation</div>
+<p class="font-body-sm text-on-surface-variant">Issuing compliant documentation and policy updates.</p>
+</div>
+</ol>
+</div>
+</div>
+</div>
+<!-- Practice Area 4: Family Law -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start mb-space-xl pb-space-xl border-b border-outline-variant/20" id="family">
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+<span class="font-label-md uppercase tracking-wider">Division 04</span>
+</div>
+<h3 class="font-headline-lg text-primary text-[32px]">Family Law</h3>
+<p class="font-body-md text-on-surface-variant">
+            Discreet, sensitive, and uncompromising representation for high-net-worth individuals navigating complex divorce, international asset tracing, and nuptial agreements.
+          </p>
+<div class="p-space-md bg-surface-container-lowest shadow-sm">
+<span class="font-label-sm uppercase tracking-wider text-secondary block mb-1">Confidentiality Guarantee</span>
+<p class="font-body-sm text-on-surface-variant">Absolute discretion maintained across all private proceedings and mediations.</p>
+</div>
+</div>
+<div class="lg:col-span-7 flex flex-col gap-space-md bg-surface-container-lowest p-space-lg shadow-sm">
+<div>
+<div class="font-headline-sm text-primary mb-space-xs">Typical Matters Handled</div>
+<ul class="space-y-2 font-body-md text-on-surface-variant">
+<li class="flex items-start gap-space-xs"><span class="text-secondary mt-1">•</span> High-net-worth divorce and financial remedy proceedings</li>
+<li class="flex items-start gap-space-xs"><span class="text-secondary mt-1">•</span> International trust asset tracing and valuation</li>
+<li class="flex items-start gap-space-xs"><span class="text-secondary mt-1">•</span> Drafting sophisticated pre-nuptial and post-nuptial agreements</li>
+<li class="flex items-start gap-space-xs"><span class="text-secondary mt-1">•</span> Cross-border child relocation and custody disputes</li>
+</ul>
+</div>
+<div class="pt-space-md border-t border-surface-container">
+<div class="font-headline-sm text-primary mb-space-xs">Engagement Process</div>
+<ol class="grid grid-cols-1 md:grid-cols-3 gap-space-md mt-space-sm">
+<div class="p-space-sm bg-surface-container-low">
+<div class="font-label-sm text-secondary mb-1">STEP 01</div>
+<div class="font-headline-sm text-primary text-[16px] mb-1">Private Consultation</div>
+<p class="font-body-sm text-on-surface-variant">Confidential briefing and asset inventory compilation.</p>
+</div>
+<div class="p-space-sm bg-surface-container-low">
+<div class="font-label-sm text-secondary mb-1">STEP 02</div>
+<div class="font-headline-sm text-primary text-[16px] mb-1">Mediation or Court</div>
+<p class="font-body-sm text-on-surface-variant">Negotiating settlement terms or preparing robust court advocacy.</p>
+</div>
+<div class="p-space-sm bg-surface-container-low">
+<div class="font-label-sm text-secondary mb-1">STEP 03</div>
+<div class="font-headline-sm text-primary text-[16px] mb-1">Resolution</div>
+<p class="font-body-sm text-on-surface-variant">Securing final consent orders and safeguarding future assets.</p>
+</div>
+</ol>
+</div>
+</div>
+</div>
+<!-- Practice Area 5: Dispute Resolution -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start" id="dispute">
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[24px]">balance</span>
+<span class="font-label-md uppercase tracking-wider">Division 05</span>
+</div>
+<h3 class="font-headline-lg text-primary text-[32px]">Dispute Resolution</h3>
+<p class="font-body-md text-on-surface-variant">
+            Elite litigation, international arbitration, and alternative dispute resolution for high-stakes commercial conflicts, fraud investigations, and regulatory inquiries.
+          </p>
+<div class="w-full h-48 bg-cover bg-center shadow-sm" data-alt="A grand mahogany-paneled British courtroom interior with polished wooden furniture, high ceilings, and soft directional light reflecting on legal briefs." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCBIdlV9CMFNIdnnSm01lPgxK_ZpMFNjBnunhHqyzqIgZrJLKkStIRQ8qiwP7N1ictPdfbkDgV_b3MYrHr6ByJfyb7nFLc5ib7VFBSUAkdAky7W-X0iqFedAyYn1bTlZ5losUFhb-595CQtDCe7zQ6vrQEsy0dIq-GrsgcsnssMz_YA-B5_dJes5QzCc-DYdeIZhAogVRBHaYzDlfyC7gCwxlyOGzz7Bto_9SV5cfdLzM2-CizEizGb')"></div>
+</div>
+<div class="lg:col-span-7 flex flex-col gap-space-md bg-surface-container-lowest p-space-lg shadow-sm">
+<div>
+<div class="font-headline-sm text-primary mb-space-xs">Typical Matters Handled</div>
+<ul class="space-y-2 font-body-md text-on-surface-variant">
+<li class="flex items-start gap-space-xs"><span class="text-secondary mt-1">•</span> High Court commercial litigation and injunctions</li>
+<li class="flex items-start gap-space-xs"><span class="text-secondary mt-1">•</span> International commercial arbitration (LCIA, ICC, SIAC)</li>
+<li class="flex items-start gap-space-xs"><span class="text-secondary mt-1">•</span> Fraud, asset recovery, and freezing orders</li>
+<li class="flex items-start gap-space-xs"><span class="text-secondary mt-1">•</span> Shareholder disputes and boardroom deadlock resolution</li>
+</ul>
+</div>
+<div class="pt-space-md border-t border-surface-container">
+<div class="font-headline-sm text-primary mb-space-xs">Engagement Process</div>
+<ol class="grid grid-cols-1 md:grid-cols-3 gap-space-md mt-space-sm">
+<div class="p-space-sm bg-surface-container-low">
+<div class="font-label-sm text-secondary mb-1">STEP 01</div>
+<div class="font-headline-sm text-primary text-[16px] mb-1">Case Analysis</div>
+<p class="font-body-sm text-on-surface-variant">Forensic document review and litigation risk appraisal.</p>
+</div>
+<div class="p-space-sm bg-surface-container-low">
+<div class="font-label-sm text-secondary mb-1">STEP 02</div>
+<div class="font-headline-sm text-primary text-[16px] mb-1">Tactical Action</div>
+<p class="font-body-sm text-on-surface-variant">Filing emergency injunctions or initiating arbitration proceedings.</p>
+</div>
+<div class="p-space-sm bg-surface-container-low">
+<div class="font-label-sm text-secondary mb-1">STEP 03</div>
+<div class="font-headline-sm text-primary text-[16px] mb-1">Trial / Settlement</div>
+<p class="font-body-sm text-on-surface-variant">Relentless advocacy before tribunals or structured mediation settlement.</p>
+</div>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Related Legal Insights Section -->
+<section class="w-full py-space-xl max-w-7xl mx-auto px-gutter">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-space-lg gap-space-md">
+<div>
+<span class="font-label-sm text-secondary uppercase tracking-widest block mb-space-xs">Thought Leadership</span>
+<h2 class="font-headline-lg text-primary text-[36px]">Related Legal Insights</h2>
+</div>
+<a class="inline-flex items-center gap-space-xs font-label-md uppercase tracking-wider text-primary hover:text-secondary transition-colors" href="#">
+<span>View All Publications</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Article 1 -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-label-sm text-secondary uppercase mb-space-xs">
+<span>Corporate Law</span>
+<span>12 Nov 2024</span>
+</div>
+<h4 class="font-headline-sm text-primary text-[20px] mb-space-xs">Navigating Cross-Border M&amp;A Post-Regulatory Reform</h4>
+<p class="font-body-sm text-on-surface-variant line-clamp-3">An in-depth analysis of tightening national security reviews and foreign direct investment scrutiny across European jurisdictions.</p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container flex items-center justify-between">
+<span class="font-body-sm text-on-surface-variant">By Jonathan Sterling</span>
+<a class="font-label-sm text-primary uppercase tracking-wider hover:text-secondary" href="#">Read Brief</a>
+</div>
+</div>
+<!-- Article 2 -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-label-sm text-secondary uppercase mb-space-xs">
+<span>Property Law</span>
+<span>04 Nov 2024</span>
+</div>
+<h4 class="font-headline-sm text-primary text-[20px] mb-space-xs">Commercial Leases in an Era of Hybrid Working</h4>
+<p class="font-body-sm text-on-surface-variant line-clamp-3">How institutional landlords and corporate tenants are redefining break clauses, rent review formulas, and sustainability covenants.</p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container flex items-center justify-between">
+<span class="font-body-sm text-on-surface-variant">By Eleanor Vance</span>
+<a class="font-label-sm text-primary uppercase tracking-wider hover:text-secondary" href="#">Read Brief</a>
+</div>
+</div>
+<!-- Article 3 -->
+<div class="bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-label-sm text-secondary uppercase mb-space-xs">
+<span>Dispute Resolution</span>
+<span>28 Oct 2024</span>
+</div>
+<h4 class="font-headline-sm text-primary text-[20px] mb-space-xs">Enforcing Arbitral Awards in Foreign Jurisdictions</h4>
+<p class="font-body-sm text-on-surface-variant line-clamp-3">Strategic considerations for multi-jurisdictional asset recovery and mitigating sovereign immunity defenses under the New York Convention.</p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container flex items-center justify-between">
+<span class="font-body-sm text-on-surface-variant">By Marcus Thorne KC</span>
+<a class="font-label-sm text-primary uppercase tracking-wider hover:text-secondary" href="#">Read Brief</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Service-Specific Enquiry CTA Banner -->
+<section class="w-full bg-primary text-on-primary py-space-xl px-gutter">
+<div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs text-left">
+<span class="font-label-md text-secondary-fixed uppercase tracking-widest">Confidential Consultation</span>
+<h2 class="font-headline-lg text-on-primary text-[36px]">Ready to Discuss Your Legal Requirements?</h2>
+<p class="font-body-md text-on-primary/80 max-w-xl">
+          Connect directly with our senior partners for an initial confidential assessment of your matter. We guarantee absolute discretion and prompt response times.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-sm shrink-0">
+<a class="px-space-md py-space-sm bg-secondary text-on-secondary font-label-md uppercase tracking-wider hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-colors text-center" href="#">
+          Arrange Consultation
+        </a>
+<a class="px-space-md py-space-sm bg-transparent text-on-primary border border-on-primary/30 font-label-md uppercase tracking-wider hover:bg-on-primary/10 transition-colors text-center" href="tel:+442079460912">
+          Call +44 (0)20 7946 0912
+        </a>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-primary-container text-on-primary-container py-space-xl"><div class="max-w-7xl mx-auto px-gutter grid grid-cols-1 md:grid-cols-4 gap-space-lg mb-space-lg"><div><div class="font-headline-lg text-on-primary mb-space-sm">Sterling &amp; Associates</div><p class="text-body-sm text-on-primary-container/80 mb-space-md">An elite British law firm providing uncompromising legal counsel, intellectual rigor, and distinguished representation for global enterprises and private clients.</p><div class="text-label-sm uppercase tracking-wider text-secondary-fixed-dim">Portfolio Demonstration Prototype</div></div><div><div class="font-headline-sm text-on-primary mb-space-sm">Legal Services</div><ul class="space-y-2 text-body-sm text-on-primary-container/80"><li><a class="hover:text-on-primary transition-colors" href="#">Corporate &amp; Commercial</a></li><li><a class="hover:text-on-primary transition-colors" href="#">Dispute Resolution</a></li><li><a class="hover:text-on-primary transition-colors" href="#">Private Wealth</a></li><li><a class="hover:text-on-primary transition-colors" href="#">Real Estate Law</a></li></ul></div><div><div class="font-headline-sm text-on-primary mb-space-sm">Firm Navigation</div><ul class="space-y-2 text-body-sm text-on-primary-container/80"><li><a class="hover:text-on-primary transition-colors" href="#">Our Firm</a></li><li><a class="hover:text-on-primary transition-colors" href="#">Our People</a></li><li><a class="hover:text-on-primary transition-colors" href="#">Insights &amp; Publications</a></li><li><a class="hover:text-on-primary transition-colors" href="#">Careers</a></li></ul></div><div><div class="font-headline-sm text-on-primary mb-space-sm">London Headquarters</div><p class="text-body-sm text-on-primary-container/80 mb-space-xs">14 Gresham Street, London EC2V 7JE</p><p class="text-body-sm text-on-primary-container/80 mb-space-xs">Tel: +44 (0)20 7946 0912</p><p class="text-body-sm text-on-primary-container/80 mb-space-md">Email: counsel@sterling-law.co.uk</p><div class="flex gap-space-sm text-body-sm"><a class="hover:text-on-primary transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-primary transition-colors" href="#">Terms of Use</a></div></div></div><div class="max-w-7xl mx-auto px-gutter pt-space-md border-t border-on-primary-container/20 flex flex-col sm:flex-row justify-between items-center text-body-sm text-on-primary-container/60"><div>© 2024 Sterling &amp; Associates LLP. All rights reserved.</div><div class="mt-2 sm:mt-0">Regulated by the Solicitors Regulation Authority.</div></div></footer></body></html>

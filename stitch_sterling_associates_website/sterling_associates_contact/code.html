@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary-container": "#775a1b",
+          "secondary-container": "#fdd589",
+          "surface-dim": "#dadada",
+          "surface": "#f9f9f9",
+          "inverse-primary": "#b6c7e8",
+          "outline-variant": "#c4c6ce",
+          "on-primary": "#ffffff",
+          "surface-bright": "#f9f9f9",
+          "on-surface": "#1a1c1c",
+          "on-tertiary-fixed-variant": "#474744",
+          "on-error": "#ffffff",
+          "primary-fixed": "#d5e3ff",
+          "tertiary-fixed-dim": "#c8c6c2",
+          "error": "#ba1a1a",
+          "surface-variant": "#e2e2e2",
+          "surface-container-highest": "#e2e2e2",
+          "on-tertiary-container": "#8d8d89",
+          "tertiary-fixed": "#e4e2dd",
+          "outline": "#75777e",
+          "secondary": "#775a1b",
+          "surface-container-low": "#f3f3f4",
+          "on-tertiary-fixed": "#1b1c19",
+          "primary-fixed-dim": "#b6c7e8",
+          "on-tertiary": "#ffffff",
+          "on-primary-container": "#7c8dab",
+          "primary": "#001128",
+          "surface-container-high": "#e8e8e8",
+          "tertiary": "#10110f",
+          "inverse-surface": "#2f3131",
+          "surface-container": "#eeeeee",
+          "on-secondary-fixed-variant": "#5c4202",
+          "on-primary-fixed": "#081c34",
+          "error-container": "#ffdad6",
+          "surface-tint": "#4e5f7b",
+          "background": "#f9f9f9",
+          "inverse-on-surface": "#f0f1f1",
+          "secondary-fixed-dim": "#e8c178",
+          "on-error-container": "#93000a",
+          "primary-container": "#14263f",
+          "on-surface-variant": "#44474d",
+          "on-secondary-fixed": "#261900",
+          "on-secondary": "#ffffff",
+          "on-primary-fixed-variant": "#364762",
+          "tertiary-container": "#252623",
+          "surface-container-lowest": "#ffffff",
+          "on-background": "#1a1c1c",
+          "secondary-fixed": "#ffdea4"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "2rem",
+          "space-sm": "1rem",
+          "margin": "3rem",
+          "space-xl": "5rem",
+          "space-md": "1.5rem",
+          "space-xs": "0.5rem",
+          "space-lg": "3rem"
+        },
+        "fontFamily": {
+          "label-sm": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "display-lg": [
+            "Cormorant Garamond"
+          ],
+          "headline-sm": [
+            "Cormorant Garamond"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "headline-lg": [
+            "Cormorant Garamond"
+          ],
+          "headline-md": [
+            "Cormorant Garamond"
+          ],
+          "display-sm": [
+            "Cormorant Garamond"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "display-md": [
+            "Cormorant Garamond"
+          ]
+        },
+        "fontSize": {
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-lg": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-md": [
+            "22px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "500"
+            }
+          ],
+          "display-sm": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.05em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "400"
+            }
+          ],
+          "display-md": [
+            "44px",
+            {
+              "lineHeight": "52px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Sterling &amp; Associates Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw8fNgwUncOCVPSVnVC8Ox_rOR5YmMVeqMuJpKK4IeBQw1Y-_FAg97WO7LKbyClIHjiwQaU1U31tjPXCWUSKjWIpTMGjLIqJxaREzQXLauw2cev1rUlbuPBTcK-F75YYpcE5ag3krzU70_UbDhfx07zAPMeYEceEZk9ISghean5qSPRSiiBWiuUT04_zdxW_NhdNpM3_ByvBmrH3FJrJ-dNYgOrIFSyK3VYyWbKp3jD56rEI1taIVg"/><a class="font-headline-md text-on-surface tracking-wide uppercase" data-path="our-firm" href="#">Sterling &amp; Associates</a></div><nav class="hidden md:flex items-center gap-space-md" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg"><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="our-firm" href="#">Our Firm</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="services" href="#">Services</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="our-people" href="#">Our People</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="insights" href="#">Insights</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-sm"><a class="hidden sm:inline-flex items-center px-space-md py-space-xs bg-primary-container text-on-primary-container text-label-md uppercase tracking-wider hover:bg-primary hover:text-on-primary transition-colors" data-path="contact" href="#">Arrange a Consultation</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full bg-surface text-on-surface">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-gutter pt-space-xl pb-space-lg">
+<div class="max-w-3xl">
+<div class="text-label-sm uppercase tracking-[0.2em] text-secondary mb-space-xs font-semibold">CONFIDENTIAL COMMUNICATIONS</div>
+<h1 class="font-display-lg text-on-surface text-[56px] leading-[64px] mb-space-md">Direct Enquiry &amp; Office Locations</h1>
+<p class="font-body-lg text-on-surface-variant text-[16px] leading-[26px]">
+        We invite discerning private clients and global enterprises to initiate confidential discussions with our senior partners. Our London headquarters ensures complete discretion and prompt professional attention.
+      </p>
+</div>
+</section>
+<!-- Main Content Split Layout -->
+<section class="max-w-7xl mx-auto px-gutter pb-space-xl w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Column 1: Contact Form (Left - 7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="mb-space-md">
+<h2 class="font-headline-lg text-on-surface mb-space-xs">Initiate an Enquiry</h2>
+<p class="font-body-md text-on-surface-variant">Please complete the form below. All submissions are protected by professional legal privilege.</p>
+</div>
+<form class="space-y-space-md" id="contact-form" onsubmit="event.preventDefault(); showSuccessState();">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md uppercase text-on-surface-variant mb-space-xs">Full Name *</label>
+<input class="w-full px-space-md py-space-sm bg-surface text-on-surface text-body-md focus:outline-none focus:ring-1 focus:ring-primary transition-all" placeholder="Lord / Lady / Mr / Ms Surname" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md uppercase text-on-surface-variant mb-space-xs">Corporate Email *</label>
+<input class="w-full px-space-md py-space-sm bg-surface text-on-surface text-body-md focus:outline-none focus:ring-1 focus:ring-primary transition-all" placeholder="counsel@enterprise.co.uk" required="" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md uppercase text-on-surface-variant mb-space-xs">Telephone *</label>
+<input class="w-full px-space-md py-space-sm bg-surface text-on-surface text-body-md focus:outline-none focus:ring-1 focus:ring-primary transition-all" placeholder="+44 (0)20 ..." required="" type="tel"/>
+</div>
+<div>
+<label class="block font-label-md uppercase text-on-surface-variant mb-space-xs">Enquiry Category *</label>
+<select class="w-full px-space-md py-space-sm bg-surface text-on-surface text-body-md focus:outline-none focus:ring-1 focus:ring-primary transition-all" required="">
+<option disabled="" selected="" value="">Select practice area</option>
+<option value="corporate">Corporate &amp; Commercial</option>
+<option value="dispute">Dispute Resolution</option>
+<option value="private-wealth">Private Wealth</option>
+<option value="real-estate">Real Estate Law</option>
+<option value="employment">Employment Law</option>
+<option value="family">Family Law</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-md uppercase text-on-surface-variant mb-space-xs">Matter Overview &amp; Message *</label>
+<textarea class="w-full px-space-md py-space-sm bg-surface text-on-surface text-body-md focus:outline-none focus:ring-1 focus:ring-primary transition-all" placeholder="Provide a summary of your legal requirements..." required="" rows="5"></textarea>
+</div>
+<div class="flex items-start gap-space-xs">
+<input class="mt-1" id="privacy-check" required="" type="checkbox"/>
+<label class="font-body-sm text-on-surface-variant" for="privacy-check">
+              I consent to Sterling &amp; Associates processing my data in accordance with the firm's privacy policy and solicitor-client confidentiality standards.
+            </label>
+</div>
+<div>
+<button class="w-full sm:w-auto px-space-xl py-space-md bg-primary text-on-primary font-label-md uppercase tracking-wider hover:bg-primary-container transition-all flex items-center justify-center gap-space-xs" id="submit-btn" type="submit">
+<span>Transmit Confidential Enquiry</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<div class="hidden p-space-md bg-primary-container text-on-primary-container text-body-md" id="success-message">
+            Your confidential enquiry has been securely transmitted. A senior partner will contact you within two business hours.
+          </div>
+</form>
+</div>
+<!-- Column 2: Office & Contact Details (Right - 5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Headquarters Card -->
+<div class="bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="flex items-center gap-space-xs mb-space-sm text-secondary">
+<span class="material-symbols-outlined">location_city</span>
+<span class="font-label-md uppercase tracking-wider">London Headquarters</span>
+</div>
+<h3 class="font-headline-lg text-on-surface mb-space-md">14 Gresham Street</h3>
+<p class="font-body-md text-on-surface-variant mb-space-md">
+            EC2V 7JE<br/>
+            City of London, United Kingdom
+          </p>
+<div class="space-y-space-sm border-t border-surface-variant pt-space-md mb-space-md">
+<div class="flex items-center gap-space-sm text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary">call</span>
+<span>+44 (0)20 7946 0912</span>
+</div>
+<div class="flex items-center gap-space-sm text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary">mail</span>
+<span>counsel@sterling-law.co.uk</span>
+</div>
+<div class="flex items-center gap-space-sm text-body-md text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary">schedule</span>
+<span>Monday – Friday: 08:30 – 19:00 GMT</span>
+</div>
+</div>
+<!-- Interactive Map Simulation -->
+<div class="w-full h-48 bg-cover bg-center" data-alt="A stylized professional map graphic showing the City of London financial district around Gresham Street, highlighting the Sterling &amp; Associates headquarters with a gold minimalist marker pin, surrounded by architectural vectors of historic financial buildings." data-location="14 Gresham Street, London EC2V 7JE" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCm1PFUf3eiJwlCpA0BIRJPgU99vNO6aYBLO3cHowyLRXHtc7nUsNOIiFNxX3zhYZSbgyn6t8Mib8ogC7A15uQ-LKjC6d5VZtdDo_DX32ButWv9ak4oX2QjTN_syaZXq1HAGDN29K3_1MHjnmUQzKm6RC6RlOHPDj4ITVmeBsdO3_1t_YNtDCrx_npK2dswooIEd4ejqSqQ-Lt06Ge2TS2sSNBKplcRFLiCP-zMUB28s1fpUhK2fNXu')"></div>
+</div>
+<!-- Security & Encryption Note -->
+<div class="bg-primary text-on-primary p-space-lg shadow-sm">
+<div class="flex items-center gap-space-xs mb-space-sm text-secondary-fixed">
+<span class="material-symbols-outlined">lock</span>
+<span class="font-label-md uppercase tracking-wider">Secure Channel Assurance</span>
+</div>
+<p class="font-body-sm text-on-primary/80 leading-relaxed mb-space-sm">
+            All digital transmissions passing through this portal utilize 256-bit SSL encryption and comply strictly with SRA regulatory standards for client privilege and secure data governance.
+          </p>
+<div class="text-label-sm uppercase tracking-wider text-secondary-fixed-dim">
+            SRA Authorisation No. 492102
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Script for Form -->
+<script>
+    function showSuccessState() {
+      const form = document.getElementById('contact-form');
+      const btn = document.getElementById('submit-btn');
+      const successMsg = document.getElementById('success-message');
+
+      btn.disabled = true;
+      btn.innerHTML = '<span>Transmitting...</span>';
+      
+      setTimeout(() => {
+        form.reset();
+        btn.style.display = 'none';
+        successMsg.classList.remove('hidden');
+      }, 1000);
+    }
+  </script>
+</div></main><footer class="w-full bg-primary-container text-on-primary-container py-space-xl"><div class="max-w-7xl mx-auto px-gutter grid grid-cols-1 md:grid-cols-4 gap-space-lg mb-space-lg"><div><div class="font-headline-lg text-on-primary mb-space-sm">Sterling &amp; Associates</div><p class="text-body-sm text-on-primary-container/80 mb-space-md">An elite British law firm providing uncompromising legal counsel, intellectual rigor, and distinguished representation for global enterprises and private clients.</p><div class="text-label-sm uppercase tracking-wider text-secondary-fixed-dim">Portfolio Demonstration Prototype</div></div><div><div class="font-headline-sm text-on-primary mb-space-sm">Legal Services</div><ul class="space-y-2 text-body-sm text-on-primary-container/80"><li><a class="hover:text-on-primary transition-colors" href="#">Corporate &amp; Commercial</a></li><li><a class="hover:text-on-primary transition-colors" href="#">Dispute Resolution</a></li><li><a class="hover:text-on-primary transition-colors" href="#">Private Wealth</a></li><li><a class="hover:text-on-primary transition-colors" href="#">Real Estate Law</a></li></ul></div><div><div class="font-headline-sm text-on-primary mb-space-sm">Firm Navigation</div><ul class="space-y-2 text-body-sm text-on-primary-container/80"><li><a class="hover:text-on-primary transition-colors" href="#">Our Firm</a></li><li><a class="hover:text-on-primary transition-colors" href="#">Our People</a></li><li><a class="hover:text-on-primary transition-colors" href="#">Insights &amp; Publications</a></li><li><a class="hover:text-on-primary transition-colors" href="#">Careers</a></li></ul></div><div><div class="font-headline-sm text-on-primary mb-space-sm">London Headquarters</div><p class="text-body-sm text-on-primary-container/80 mb-space-xs">14 Gresham Street, London EC2V 7JE</p><p class="text-body-sm text-on-primary-container/80 mb-space-xs">Tel: +44 (0)20 7946 0912</p><p class="text-body-sm text-on-primary-container/80 mb-space-md">Email: counsel@sterling-law.co.uk</p><div class="flex gap-space-sm text-body-sm"><a class="hover:text-on-primary transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-primary transition-colors" href="#">Terms of Use</a></div></div></div><div class="max-w-7xl mx-auto px-gutter pt-space-md border-t border-on-primary-container/20 flex flex-col sm:flex-row justify-between items-center text-body-sm text-on-primary-container/60"><div>© 2024 Sterling &amp; Associates LLP. All rights reserved.</div><div class="mt-2 sm:mt-0">Regulated by the Solicitors Regulation Authority.</div></div></footer></body></html>
